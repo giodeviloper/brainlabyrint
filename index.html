@@ -3,16 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brainlabyrint</title>
+  <title>Brainlabyrint — Automated Social Media Scheduling</title>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-    a { color: #0066cc; }
+    :root {
+      --primary: #0066cc;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --border: #e5e7eb;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 2rem;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+    .platforms {
+      display: flex;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .badge {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 16px;
+    }
+    .features li {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .features strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--muted);
+      display: flex;
+      gap: 20px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Brainlabyrint</h1>
-  <p>Welcome to the official application page for Brainlabyrint.</p>
-  <a href="terms.html">Terms of Service</a>
-  <p><a href="privacy.html">Privacy Policy</a></p>
+
+  <header>
+    <h1>Brainlabyrint</h1>
+    <p class="tagline">Automated content scheduling and publishing for modern creators.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the Application</h2>
+      <p>
+        Brainlabyrint helps content creators streamline their publishing workflow. Instead of manually uploading videos and posts every day, you can organize your content calendar in advance and let Brainlabyrint handle automatic publishing at your chosen times.
+      </p>
+    </section>
+
+    <section>
+      <h2>Supported Platforms</h2>
+      <p>Brainlabyrint currently integrates directly with:</p>
+      <div class="platforms">
+        <span class="badge">TikTok</span>
+        <span class="badge">Instagram</span>
+      </div>
+      <p><small><em>More social platforms coming soon.</em></small></p>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <ul class="features">
+        <li>
+          <strong>Automated Publishing</strong>
+          Schedule your short-form videos, Reels, and posts to go live automatically without manual intervention or push-notification reminders.
+        </li>
+        <li>
+          <strong>Cross-Platform Workflow</strong>
+          Manage and schedule content for both TikTok and Instagram from a single, unified workspace.
+        </li>
+        <li>
+          <strong>Consistent Posting Schedule</strong>
+          Batch-create your content ahead of time and maintain a reliable presence so you can focus on creating rather than uploading.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+
 </body>
 </html>
